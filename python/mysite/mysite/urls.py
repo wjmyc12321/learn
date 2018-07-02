@@ -1,5 +1,4 @@
-"""myfirstdjango URL Configuration
-
+"""mysite URL Configuration
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
 Examples:
@@ -15,7 +14,8 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-
+from learn import views as learn_views # new
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-]
+  url(r'^$,learn_views.index), # new
+      url(r'^admin/', admin.site.urls),
+      ]

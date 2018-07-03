@@ -7,5 +7,8 @@
 
 from django.http import HttpResponse
 
-def index(request):
-    return HttpResponse(u"新的开始")
+def add(request):
+    a = request.GET['a']
+    b = request.GET['b']
+    c = int(a) + int(b)
+    return HttpResponse()

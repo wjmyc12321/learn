@@ -11,4 +11,4 @@ def add(request):
     a = request.GET['a']
     b = request.GET['b']
     c = int(a) + int(b)
-    return HttpResponse()
+    return HttpResponse(str(c))

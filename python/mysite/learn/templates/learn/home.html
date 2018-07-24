@@ -1,0 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
+站点:{{ List1.site }}     内容:{{ List1.content }}
+{{ request.GET.urlencode }}
+<a href="{{ request.path }}?{{ request.GET.urlencode}}&delete=1">当前网址加参数 delete</a>
